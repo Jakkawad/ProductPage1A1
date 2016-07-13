@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView:UITableView!
     
     
+    
     func delay(seconds seconds: Double, completion:()->()) {
         let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64 (Double(NSEC_PER_SEC) * seconds ))
         dispatch_after(popTime, dispatch_get_main_queue()) {
@@ -20,6 +21,15 @@ class ViewController: UIViewController {
         }
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if let cell = sender as? CustomCollectionViewCell,
+            let detailPage = segue.destinationViewController as? DetailViewController {
+            let product = cell.product
+            detailPage.product = product
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,13 +52,21 @@ extension ViewController:UITableViewDelegate { }
 
 extension ViewController:UITableViewDataSource {
     
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return Category.sharedInstance.genres[section].name
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return Category.sharedInstance.genres.count
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell0 = tableView.dequeueReusableCellWithIdentifier("tableCell0")
-        
-        return cell0!
+        let cell0 = tableView.dequeueReusableCellWithIdentifier("tableCell0") as! CustomTableViewCell
+        cell0.genre = Category.sharedInstance.genres[indexPath.section]
+        return cell0
     }
 }

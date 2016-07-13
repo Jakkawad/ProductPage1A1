@@ -13,6 +13,11 @@ class CustomTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView:UICollectionView!
     
+    var genre:Genre? = nil {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,12 +34,14 @@ class CustomTableViewCell: UITableViewCell {
 
 extension CustomTableViewCell:UICollectionViewDataSource {
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return genre!.products.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell0 = collectionView.dequeueReusableCellWithReuseIdentifier("collectCell0", forIndexPath: indexPath)
-        
+        let cell0 = collectionView.dequeueReusableCellWithReuseIdentifier("collectCell0", forIndexPath: indexPath) as! CustomCollectionViewCell
+        if let genre = genre {
+            cell0.product = genre.products[indexPath.row]
+        }
         return cell0
     }
 }
