@@ -20,6 +20,9 @@
 		845764271D3636A900190C72 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845764261D3636A900190C72 /* Category.swift */; };
 		845764291D3637FC00190C72 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845764281D3637FC00190C72 /* Genre.swift */; };
 		8457642B1D363ACF00190C72 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457642A1D363ACF00190C72 /* CustomCollectionViewCell.swift */; };
+		848C18D41D38976300D0F1F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C18D31D38976300D0F1F9 /* MainViewController.swift */; };
+		848C18D61D38977100D0F1F9 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C18D51D38977100D0F1F9 /* MainTableViewCell.swift */; };
+		848C18D81D389A0200D0F1F9 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C18D71D389A0200D0F1F9 /* MainCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		845764261D3636A900190C72 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		845764281D3637FC00190C72 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		8457642A1D363ACF00190C72 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		848C18D31D38976300D0F1F9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		848C18D51D38977100D0F1F9 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		848C18D71D389A0200D0F1F9 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		B323816C4B1D43E5AA32888F /* Pods-ProductPage1A1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductPage1A1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProductPage1A1/Pods-ProductPage1A1.debug.xcconfig"; sourceTree = "<group>"; };
 		FC680F75B92421BC6F645FC6 /* Pods_ProductPage1A1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductPage1A1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,8 +94,19 @@
 				845764241D36331500190C72 /* DetailViewController.swift */,
 				845764261D3636A900190C72 /* Category.swift */,
 				845764281D3637FC00190C72 /* Genre.swift */,
+				848C18D91D389B1100D0F1F9 /* Main */,
 			);
 			path = ProductPage1A1;
+			sourceTree = "<group>";
+		};
+		848C18D91D389B1100D0F1F9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				848C18D31D38976300D0F1F9 /* MainViewController.swift */,
+				848C18D51D38977100D0F1F9 /* MainTableViewCell.swift */,
+				848C18D71D389A0200D0F1F9 /* MainCollectionViewCell.swift */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 		DE4E6E0FC38EFFEE73D7AB1D /* Frameworks */ = {
@@ -237,8 +254,11 @@
 				8457640F1D362B3200190C72 /* ViewController.swift in Sources */,
 				845764251D36331500190C72 /* DetailViewController.swift in Sources */,
 				8457642B1D363ACF00190C72 /* CustomCollectionViewCell.swift in Sources */,
+				848C18D61D38977100D0F1F9 /* MainTableViewCell.swift in Sources */,
 				8457640D1D362B3200190C72 /* AppDelegate.swift in Sources */,
 				845764231D362E7300190C72 /* Model.swift in Sources */,
+				848C18D81D389A0200D0F1F9 /* MainCollectionViewCell.swift in Sources */,
+				848C18D41D38976300D0F1F9 /* MainViewController.swift in Sources */,
 				845764271D3636A900190C72 /* Category.swift in Sources */,
 				845764291D3637FC00190C72 /* Genre.swift in Sources */,
 			);
