@@ -50,7 +50,7 @@ class Product {
             self.name = json["Title"].stringValue
             self.imageURL = json["Poster"].stringValue
             self.productDescription = json["Plot"].stringValue
-            print(json)
+            //print(json)
             /*
             let json = JSON(dataValue)
             self.imageURL = json["Poster"].stringValue

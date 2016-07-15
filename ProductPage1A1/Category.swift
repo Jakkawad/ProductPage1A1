@@ -46,11 +46,8 @@ class Category {
         */
         //getProduct.productId = ""
         // category 1
-        let cat1A = Product(name: "")
-        if String(cat1A) == "" {
-            print("Error")
-        }
-        //print(getProduct.id0)
+        let cat1A = Product(name: getProduct.id0)
+        print(getProduct.id0)
         let cat1B = Product(name: "37")
         let cat1C = Product(name: "37")
         

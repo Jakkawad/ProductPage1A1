@@ -36,15 +36,15 @@ class GetProduct {
             self.id6 = json["Id_6"].stringValue
             self.id7 = json["Id_7"].stringValue
             
-            print(self.id0)
+            //print(self.id0)
             
         }
         
         
     }
     
-    init() {
-        self.id0 = ""
+    init(id0: String) {
+        self.id0 = "37"
         self.id1 = ""
         self.id2 = ""
         self.id3 = ""
@@ -52,7 +52,6 @@ class GetProduct {
         self.id5 = ""
         self.id6 = ""
         self.id7 = ""
-        
         test()
     }
 }
