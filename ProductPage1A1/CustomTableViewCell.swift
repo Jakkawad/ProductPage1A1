@@ -18,7 +18,13 @@ class CustomTableViewCell: UITableViewCell {
             collectionView.reloadData()
         }
     }
-
+    /*
+    var model:Model? = nil {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+ */
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -35,12 +41,14 @@ class CustomTableViewCell: UITableViewCell {
 extension CustomTableViewCell:UICollectionViewDataSource {
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return genre!.products.count
+        //return model!.cars.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell0 = collectionView.dequeueReusableCellWithReuseIdentifier("collectCell0", forIndexPath: indexPath) as! CustomCollectionViewCell
         if let genre = genre {
             cell0.product = genre.products[indexPath.row]
+            //cell0.car = model?.cars[indexPath.row]
         }
         return cell0
     }

@@ -37,6 +37,8 @@ class ViewController: UIViewController {
         delay(seconds: 1.0) {
             self.tableView.reloadData()
         }
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -54,10 +56,12 @@ extension ViewController:UITableViewDataSource {
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return Category.sharedInstance.genres[section].name
+        //return Store.sharedInstance.models[section].name
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return Category.sharedInstance.genres.count
+        //return Store.sharedInstance.models.count
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -67,6 +71,7 @@ extension ViewController:UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell0 = tableView.dequeueReusableCellWithIdentifier("tableCell0") as! CustomTableViewCell
         cell0.genre = Category.sharedInstance.genres[indexPath.section]
+        //cell0.model = Store.sharedInstance.models[indexPath.section]
         return cell0
     }
 }

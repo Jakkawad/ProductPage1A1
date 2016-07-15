@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DYl-VG-JHJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8ak-7G-4Jb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -102,10 +102,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="dMd-tj-chQ" secondAttribute="trailing" constant="-20" id="BEL-3I-yqY"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dMd-tj-chQ" secondAttribute="bottom" id="CkF-Zh-zlp"/>
-                            <constraint firstItem="dMd-tj-chQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="V4a-uR-sfR"/>
-                            <constraint firstItem="dMd-tj-chQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="wbP-vb-lIa"/>
+                            <constraint firstItem="dMd-tj-chQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="3bx-lV-hj7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dMd-tj-chQ" secondAttribute="trailing" constant="-20" id="4Fj-gz-VA8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dMd-tj-chQ" secondAttribute="bottom" id="F7s-cZ-dWF"/>
+                            <constraint firstItem="dMd-tj-chQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="oEg-MJ-zLf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="scw-ja-isi"/>
@@ -305,6 +305,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DYl-VG-JHJ" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mcv-JB-yt8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

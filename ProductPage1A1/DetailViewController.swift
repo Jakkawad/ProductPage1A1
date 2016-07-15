@@ -17,16 +17,24 @@ class DetailViewController: UIViewController {
     
     var product:Product? = nil
     
+    //var car:Car? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         if let product = product {
+            
             lblProductName.text = product.name
             lblProductDescription.text = product.productDescription
             if let url = NSURL(string: product.imageURL) {
                 self.imageViewProduct.af_setImageWithURL(url)
             }
+ 
+            
+            
         }
+ 
         // Do any additional setup after loading the view.
     }
 
